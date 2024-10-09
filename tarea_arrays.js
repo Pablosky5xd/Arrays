@@ -52,16 +52,14 @@ console.log(buscaPalabras(words, 'mundo')) // El resultado debe ser: ['javascrip
 // Si no la encuentra, devuelve [-1, -1].
 function findJavaScript(matrix) {
     for (let i = 0; i <= matrix.length - 1; i++) {
-        console.log(matrix[i])
+     
         for (let j = 0; j <= matrix[i].length - 1; j++) {
-            console.log(matrix[i][j])
+
             if (matrix[i][j] === "JavaScript"){
                 return [i,j]      
             }
-            else {
-                return [ -1, -1]
-            }
         }
+        return [ -1, -1]
     }
 }
 const matrix = [
